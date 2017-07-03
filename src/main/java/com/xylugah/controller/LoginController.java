@@ -20,4 +20,10 @@ public class LoginController {
 		return new User("XylugaH", 1, "123");
 	}
 
+	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	public User home(@RequestParam(value = "name", defaultValue = "World") String name) {
+		logger.info("Welcome home! The client locale is {}.");
+
+		return new User("XylugaH", 1, "123");
+	}
 }
