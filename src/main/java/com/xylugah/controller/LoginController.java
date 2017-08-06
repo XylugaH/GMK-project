@@ -13,15 +13,8 @@ public class LoginController {
 
 	private static final Logger logger = Logger.getLogger(LoginController.class);
 
-	private String port = 809;
+	//private String port = "8090";
 	
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public User home(@RequestParam(value = "name", defaultValue = "World") String name) {
-		logger.info("Welcome home! The client locale is {}.");
-
-		return new User("XylugaH", 1, "123");
-	}
-
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public User home(@RequestParam(value = "name", defaultValue = "World") String name) {
 		logger.info("Welcome home! The client locale is {}.");
