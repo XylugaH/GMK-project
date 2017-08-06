@@ -12,7 +12,6 @@ import com.xylugah.entity.User;
 public class LoginController {
 
 	private static final Logger logger = Logger.getLogger(LoginController.class);
-
 	//private String port = "8090";
 	
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
